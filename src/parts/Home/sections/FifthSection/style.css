@@ -1,0 +1,126 @@
+.fifthsection {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.background-fifthsection {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../../assets/images/background_fiftysection.jpg');
+    background-position: center top;
+    position: relative;
+    background-size: cover;
+}
+
+.fifthcontainer {
+    width: 50vw;
+    height: 500px;
+    padding-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.fifthcontainer h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.fifthcontainer h2 {
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.fifthcontainer img {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transform: none;
+    width: 125px;
+    height: 32.5px;
+    margin: 10px;
+}
+
+.fifthcontainer button {
+    width: 400px;
+    height: 100px;
+}
+
+@media (min-width: 1150px) and (max-width: 1900px) {
+    .background-fifthsection {
+        background-position: 100% top;
+    }
+}
+
+@media (min-width: 625px) and (max-width: 1149px) {
+    .background-fifthsection {
+        background-position: 90% top;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    .fifthcontainer {
+        width: 90vw;
+        height: 400px;
+        padding-top: 10px;
+        margin-left: 10px;
+        justify-content: end;
+    }
+
+    .fifthcontainer h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .fifthcontainer h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .fifthcontainer button {
+        width: 350px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 624px) {
+    .background-fifthsection {
+        background-position: 85% top;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .fifthcontainer {
+        width: 90vw;
+        height: 400px;
+        padding-top: 10px;
+        margin-left: 10px;
+        justify-content: end;
+    }
+
+    .fifthcontainer h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .fifthcontainer h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .fifthcontainer button {
+        width: 300px;
+        height: 75px;
+    }
+}

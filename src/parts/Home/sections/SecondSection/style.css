@@ -1,0 +1,149 @@
+.secondsection {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 auto 50px;
+    width: 400px;
+    height: 100px;
+}
+
+.image {
+    align-self: self-start;
+    margin: 0 0 50px;
+    width: 90%;
+    height: 50%;
+}
+
+.container button{
+    translate: -50px 0;
+}
+
+.text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.texth2 .bold {
+    font-weight: 700;
+}
+
+.texth1 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.texth2 {
+    font-size: 27px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.texth2 ol {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.texth2 ol li::marker {
+    color: white;
+    font-size: 20px;
+}
+
+
+@media (min-width: 1150px ) and (max-width: 1900px) {
+
+    .image {
+        height: 50%;
+    }
+
+    .container button{
+        translate: -25px 0;
+    }
+
+    .texth1 {
+        font-size: 26px;
+    }
+
+    .texth2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 625px) and (max-width: 1149px) {
+    
+    .container {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .background {
+        justify-content: center;
+    }
+
+    .text-container {
+        width: 90%;
+    }
+
+    .texth1 {
+        font-size: 26px;
+    }
+
+    .texth2 {
+        font-size: 22px;
+    }
+
+
+}
+
+@media (max-width: 624px) {
+
+    .container {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .background {
+        justify-content: center;
+    }
+
+    .text-container {
+        width: 90%;
+    }
+
+    .texth1 {
+        font-size: 23px;
+    }
+
+    .texth2 {
+        font-size: 19px;
+    }
+
+}

@@ -1,0 +1,177 @@
+.thirdsection {
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    background-image: url('../../../../assets/images/background_thirdsection.png');
+    background-position: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+.background-thirdimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    transition: background-position 0.5s ease;
+    padding-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.background-thirdimage h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    width: 80%;
+    margin-bottom: 25px;
+    color: rgb(185, 134, 47);
+}
+
+.background-thirdimage h2 {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.background-thirdimage nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.background-thirdimage ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.background-thirdimage nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    background: rgb(20, 20, 20);
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.background-thirdimage nav li:hover {
+    transform: translateY(-10px);
+}
+
+.background-thirdimage nav li img {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-radius: 50%;
+}
+
+.background-thirdimage nav li h3 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    padding-top: 30px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.background-thirdimage nav li span {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 1150px) and (max-width: 1900px) {
+    .thirdsection {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .background-thirdimage ol {
+        flex-direction: row;
+    }
+
+    .background-thirdimage nav li {
+        width: 300px;
+    }
+}
+
+@media (min-width: 625px) and (max-width: 1149px) {
+    .thirdsection {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .background-thirdimage h2 {
+        padding-top: 0px;
+        height: auto;
+    }
+
+    .background-thirdimage ol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .background-thirdimage nav li {
+        width: 90%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .background-thirdimage nav {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 624px) {
+    .thirdsection {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .background-thirdimage h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .background-thirdimage h2 {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .background-thirdimage ol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .background-thirdimage nav li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .background-thirdimage nav li span {
+        font-size: 0.9rem;
+    }
+}
